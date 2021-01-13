@@ -24,9 +24,11 @@ module.exports = {
     sourceType: 'module',
   },
   ignorePatterns: ['/*.*'],
-  plugins: [
-    '@typescript-eslint',
-  ],
+  plugins: ['@typescript-eslint'],
   rules: {
+    'no-unused-vars': 'warn',
+    'no-return-assign': 'warn',
+    'no-param-reassign': 'warn',
+    'no-undef': 'warn',
   },
 };
